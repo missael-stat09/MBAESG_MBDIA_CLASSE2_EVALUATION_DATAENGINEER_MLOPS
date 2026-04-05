@@ -6,8 +6,6 @@ Ce projet a été réalisé dans le cadre d'un workshop d'évaluation en Data En
 
 L'ensemble du workflow — ingestion, exploration, préparation, entraînement, optimisation et déploiement — a été réalisé directement dans Snowflake en combinant Snowpark, Snowflake ML et les Snowflake Notebooks.
 
----
-
 ## Dataset
 
 Le dataset contient des informations sur les caractéristiques de 1090 maisons ainsi que leurs prix de vente. Il est disponible dans le bucket S3 suivant : `s3://logbrain-datalake/datasets/house_price/`.
@@ -27,8 +25,6 @@ Le dataset contient des informations sur les caractéristiques de 1090 maisons a
 | parking | Nombre de places de stationnement |
 | prefarea | Localisation en zone privilégiée (yes/no) |
 | furnishingstatus | État d'ameublement (furnished / semi-furnished / unfurnished) |
-
----
 
 ## Pipeline réalisé
 
@@ -55,8 +51,6 @@ Le meilleur modèle a été enregistré dans le Snowflake Model Registry avec se
 
 **8. Application Streamlit**
 Une application Streamlit a été développée dans Snowflake pour permettre aux utilisateurs métier d'estimer le prix d'une maison en saisissant ses caractéristiques.
-
----
 
 ## Analyse des performances
 
@@ -89,29 +83,10 @@ Les 14% de variance non expliqués correspondent vraisemblablement à des critè
 | early_stopping_rounds | 20 |
 | Arbres utilisés (early stopping) | 300 |
 
----
-
 ## Structure du dépôt
-
-```
 .
 ├── notebook_house_price.md       # Notebook Snowflake complet (pipeline ML)
 ├── streamlit_house_price.py      # Application Streamlit de prédiction
 └── README.md                     # Ce fichier
-```
 
----
-
-## Membres du groupe
-
-A compléter avant envoi.
-
----
-
-## Envoi du livrable
-
-Dépôt à envoyer à axel@logbrain.fr avec l'intitulé suivant :
-
-```
-MBAESG_[PROMOTION]_[CLASSE]_EVALUATION_DATAENGINEER_MLOPS
-```
+## Réaliser par: Missael Jean Léger SYLVAIN
